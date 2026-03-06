@@ -93,7 +93,7 @@ class auto_patrol_node(BasicNavigator):
           while not self.isTaskComplete():
              feedback=self.getFeedback()
              self.get_logger().info(f'剩余距离：{feedback.distance_remaining:.2f}m')
-        elif:
+        else:
              self.get_logger().info("当前旋转进行中！")
         result=self.getResult()
         self.get_logger().info(f'导航结果是：{result}')
